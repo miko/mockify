@@ -26,5 +26,5 @@ WORKDIR /root/
 
 COPY config/* config/
 COPY --from=builder /go/src/mockify/mockify .
-
-CMD ./mockify
+COPY run.sh run.sh
+CMD ./run.sh
